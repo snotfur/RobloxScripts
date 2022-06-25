@@ -447,12 +447,3 @@ pg3.CreateButton({
         Notify('Credits','Script made by KAKOYTO_LOXX',5)
     end
 })
-
-
-local args = {
-    [1] = "hie my names dylan and im a stinky furry and i need to be punished uwu",
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
