@@ -492,7 +492,6 @@ local function ROZJIRF_fake_script() -- Backing.Script
 	
 	plr:GetMouse().KeyDown:Connect(function(key)
 		if key == 'v' then
-			wait(2)
 			local c_ = 0
 			for _,v in next,plr.Backpack:GetChildren() do
 				c_=c_+1
