@@ -4,18 +4,20 @@
 -- Instances:
 
 local owo = Instance.new("ScreenGui")
-local Backing = Instance.new("Frame")
+local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local Backing = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local GodButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
-local DupeButton = Instance.new("TextButton")
+local GodButton = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local SpamG = Instance.new("TextButton")
+local DupeButton = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local SpamC = Instance.new("TextButton")
+local SpamG = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
+local SpamC = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
@@ -25,21 +27,32 @@ local TextLabel_4 = Instance.new("TextLabel")
 owo.Name = "owo"
 owo.Parent = game.CoreGui
 
-Backing.Name = "Backing"
-Backing.Parent = owo
-Backing.BackgroundColor3 = Color3.fromRGB(50, 51, 79)
-Backing.Position = UDim2.new(0.0250521898, 0, 0.531197309, 0)
-Backing.Size = UDim2.new(0, 150, 0, 260)
-Backing.Draggable = true
-Backing.Active = true
+Frame.Parent = owo
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.fromRGB(38, 43, 71)
+Frame.Position = UDim2.new(0.0862846971, 0, 0.765758872, 0)
+Frame.Size = UDim2.new(0, 155, 0, 265)
+Frame.Draggable = true
+Frame.Active = true
 
 UICorner.CornerRadius = UDim.new(0, 12)
-UICorner.Parent = Backing
+UICorner.Parent = Frame
+
+Backing.Name = "Backing"
+Backing.Parent = Frame
+Backing.AnchorPoint = Vector2.new(0.5, 0.5)
+Backing.BackgroundColor3 = Color3.fromRGB(50, 51, 79)
+Backing.Position = UDim2.new(0.499704629, 0, 0.499156833, 0)
+Backing.Size = UDim2.new(0, 150, 0, 260)
+
+UICorner_2.CornerRadius = UDim.new(0, 12)
+UICorner_2.Parent = Backing
 
 TextLabel.Parent = Backing
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.219999999, 0, 0, 0)
+TextLabel.Position = UDim2.new(0.5, 0, 0.0384615399, 0)
 TextLabel.Size = UDim2.new(0, 83, 0, 20)
 TextLabel.Font = Enum.Font.Kalam
 TextLabel.Text = "chaos ui"
@@ -47,13 +60,14 @@ TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 30.000
 TextLabel.TextWrapped = true
 
-UICorner_2.CornerRadius = UDim.new(0, 12)
-UICorner_2.Parent = TextLabel
+UICorner_3.CornerRadius = UDim.new(0, 12)
+UICorner_3.Parent = TextLabel
 
 GodButton.Name = "GodButton"
 GodButton.Parent = Backing
+GodButton.AnchorPoint = Vector2.new(0.5, 0.5)
 GodButton.BackgroundColor3 = Color3.fromRGB(38, 43, 71)
-GodButton.Position = UDim2.new(0.0666666701, 0, 0.123076923, 0)
+GodButton.Position = UDim2.new(0.5, 0, 0.180769235, 0)
 GodButton.Size = UDim2.new(0, 130, 0, 30)
 GodButton.Font = Enum.Font.Kalam
 GodButton.Text = "Godmode"
@@ -62,13 +76,14 @@ GodButton.TextScaled = true
 GodButton.TextSize = 14.000
 GodButton.TextWrapped = true
 
-UICorner_3.CornerRadius = UDim.new(0, 12)
-UICorner_3.Parent = GodButton
+UICorner_4.CornerRadius = UDim.new(0, 12)
+UICorner_4.Parent = GodButton
 
 DupeButton.Name = "DupeButton"
 DupeButton.Parent = Backing
+DupeButton.AnchorPoint = Vector2.new(0.5, 0.5)
 DupeButton.BackgroundColor3 = Color3.fromRGB(38, 43, 71)
-DupeButton.Position = UDim2.new(0.0666666701, 0, 0.27692309, 0)
+DupeButton.Position = UDim2.new(0.5, 0, 0.334615409, 0)
 DupeButton.Size = UDim2.new(0, 130, 0, 30)
 DupeButton.Font = Enum.Font.Kalam
 DupeButton.Text = "Dupe (L)"
@@ -77,13 +92,14 @@ DupeButton.TextScaled = true
 DupeButton.TextSize = 14.000
 DupeButton.TextWrapped = true
 
-UICorner_4.CornerRadius = UDim.new(0, 12)
-UICorner_4.Parent = DupeButton
+UICorner_5.CornerRadius = UDim.new(0, 12)
+UICorner_5.Parent = DupeButton
 
 SpamG.Name = "SpamG"
 SpamG.Parent = Backing
+SpamG.AnchorPoint = Vector2.new(0.5, 0.5)
 SpamG.BackgroundColor3 = Color3.fromRGB(38, 43, 71)
-SpamG.Position = UDim2.new(0.0666666701, 0, 0.430769235, 0)
+SpamG.Position = UDim2.new(0.266666651, 0, 0.488461554, 0)
 SpamG.Size = UDim2.new(0, 60, 0, 30)
 SpamG.Font = Enum.Font.Kalam
 SpamG.Text = "Nade Spam"
@@ -92,13 +108,14 @@ SpamG.TextScaled = true
 SpamG.TextSize = 14.000
 SpamG.TextWrapped = true
 
-UICorner_5.CornerRadius = UDim.new(0, 12)
-UICorner_5.Parent = SpamG
+UICorner_6.CornerRadius = UDim.new(0, 12)
+UICorner_6.Parent = SpamG
 
 SpamC.Name = "SpamC"
 SpamC.Parent = Backing
+SpamC.AnchorPoint = Vector2.new(0.5, 0.5)
 SpamC.BackgroundColor3 = Color3.fromRGB(38, 43, 71)
-SpamC.Position = UDim2.new(0.533333361, 0, 0.430769235, 0)
+SpamC.Position = UDim2.new(0.733333349, 0, 0.488461554, 0)
 SpamC.Size = UDim2.new(0, 60, 0, 30)
 SpamC.Font = Enum.Font.Kalam
 SpamC.Text = "C4 Spam"
@@ -107,13 +124,14 @@ SpamC.TextScaled = true
 SpamC.TextSize = 14.000
 SpamC.TextWrapped = true
 
-UICorner_6.CornerRadius = UDim.new(0, 12)
-UICorner_6.Parent = SpamC
+UICorner_7.CornerRadius = UDim.new(0, 12)
+UICorner_7.Parent = SpamC
 
 TextLabel_2.Parent = Backing
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0, 0, 0.584615409, 0)
+TextLabel_2.Position = UDim2.new(0.5, 0, 0.657692373, 0)
 TextLabel_2.Size = UDim2.new(0, 150, 0, 31)
 TextLabel_2.Font = Enum.Font.Kalam
 TextLabel_2.Text = "Sniper (C)"
@@ -121,9 +139,10 @@ TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextSize = 30.000
 
 TextLabel_3.Parent = Backing
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0, 0, 0.703846157, 0)
+TextLabel_3.Position = UDim2.new(0.5, 0, 0.77692312, 0)
 TextLabel_3.Size = UDim2.new(0, 150, 0, 31)
 TextLabel_3.Font = Enum.Font.Kalam
 TextLabel_3.Text = "Minigun (V)"
@@ -131,13 +150,15 @@ TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextSize = 30.000
 
 TextLabel_4.Parent = Backing
+TextLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(-0.00666666683, 0, 0.880769253, 0)
-TextLabel_4.Size = UDim2.new(0, 151, 0, 31)
+TextLabel_4.Position = UDim2.new(0.498333335, 0, 0.938461542, 0)
+TextLabel_4.Size = UDim2.new(0, 149, 0, 31)
 TextLabel_4.Font = Enum.Font.Kalam
-TextLabel_4.Text = "UI by hex | Scripting by KAKOYTO_LOXX"
+TextLabel_4.Text = "UI by hex"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 15.000
 TextLabel_4.TextWrapped = true
 
@@ -178,7 +199,7 @@ end
 
 -- Scripts:
 
-local function JKWGFZ_fake_script() -- GodButton.Script 
+local function QOBBO_fake_script() -- GodButton.Script 
 	local script = Instance.new('Script', GodButton)
 	local req = require
 	local require = function(obj)
@@ -254,8 +275,8 @@ local function JKWGFZ_fake_script() -- GodButton.Script
 	
 	button.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(JKWGFZ_fake_script)()
-local function ZTKF_fake_script() -- DupeButton.Script 
+coroutine.wrap(QOBBO_fake_script)()
+local function PVYRR_fake_script() -- DupeButton.Script 
 	local script = Instance.new('Script', DupeButton)
 	local req = require
 	local require = function(obj)
@@ -267,7 +288,7 @@ local function ZTKF_fake_script() -- DupeButton.Script
 	end
 
 	button = script.Parent
-	ms = game.CoreGui.owo.Backing.ModuleScript
+	ms = game.CoreGui.owo.Frame.Backing.ModuleScript
 	
 	function lclick()
 		local secondsElapsed = 0
@@ -312,8 +333,8 @@ local function ZTKF_fake_script() -- DupeButton.Script
 	
 	button.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(ZTKF_fake_script)()
-local function EDDTIX_fake_script() -- SpamG.Script 
+coroutine.wrap(PVYRR_fake_script)()
+local function WHKLSZ_fake_script() -- SpamG.Script 
 	local script = Instance.new('Script', SpamG)
 	local req = require
 	local require = function(obj)
@@ -333,7 +354,7 @@ local function EDDTIX_fake_script() -- SpamG.Script
 	local rs = game:GetService'RunService'.RenderStepped
 	
 	button = script.Parent
-	ms = game.CoreGui.owo.Backing.ModuleScript
+	ms = game.CoreGui.owo.Frame.Backing.ModuleScript
 	
 	function lclick()
 		for _,v in next,plr.Backpack:GetChildren() do
@@ -352,8 +373,8 @@ local function EDDTIX_fake_script() -- SpamG.Script
 	
 	button.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(EDDTIX_fake_script)()
-local function TDOBIHE_fake_script() -- SpamC.Script 
+coroutine.wrap(WHKLSZ_fake_script)()
+local function JBEA_fake_script() -- SpamC.Script 
 	local script = Instance.new('Script', SpamC)
 	local req = require
 	local require = function(obj)
@@ -374,7 +395,7 @@ local function TDOBIHE_fake_script() -- SpamC.Script
 	
 	
 	button = script.Parent
-	ms = game.CoreGui.owo.Backing.ModuleScript
+	ms = game.CoreGui.owo.Frame.Backing.ModuleScript
 	
 	function lclick()
 		
@@ -394,8 +415,8 @@ local function TDOBIHE_fake_script() -- SpamC.Script
 	
 	button.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(TDOBIHE_fake_script)()
-local function ROZJIRF_fake_script() -- Backing.Script 
+coroutine.wrap(JBEA_fake_script)()
+local function FPKXKAC_fake_script() -- Backing.Script 
 	local script = Instance.new('Script', Backing)
 	local req = require
 	local require = function(obj)
@@ -414,7 +435,7 @@ local function ROZJIRF_fake_script() -- Backing.Script
 	local ts = game:GetService'TweenService'
 	local rs = game:GetService'RunService'.RenderStepped
 	
-	ms = game.CoreGui.owo.Backing.ModuleScript
+	ms = game.CoreGui.owo.Frame.Backing.ModuleScript
 	
 	
 	local function AddCd(tool,Cd)
@@ -549,4 +570,4 @@ local function ROZJIRF_fake_script() -- Backing.Script
 		end
 	end)
 end
-coroutine.wrap(ROZJIRF_fake_script)()
+coroutine.wrap(FPKXKAC_fake_script)()
